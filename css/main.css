@@ -1,0 +1,621 @@
+/* GENERAL STYLES */
+
+* { margin: 0px; padding: 0px; border: 0px;}
+
+body {
+	background: #127ea6;
+	color: #fff;
+	font-family: Georgia;
+	font-size: 11px;
+}
+a {
+	color: #fff;
+	outline: 0;
+	text-decoration: none;
+}
+
+div { zoom: 1; } 
+h1 {
+	font-size: 32px;
+	font-style: italic;
+	font-weight: normal;
+}
+h2 {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: normal;
+}
+h3 {
+	font-size: 21px;
+	font-style: italic;
+	font-weight: normal;
+}
+h4 {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+}
+.float-area {
+	overflow: hidden;
+}
+
+/* GENERAL STYLES END */
+
+/* HEADER STYLES */
+
+#header_decorator {
+	background: url('../images/bkg-header-decorator.png');
+	min-width: 910px;
+}
+#header_clouds {
+	background: url('../images/bkg-header-clouds.png') left bottom repeat-x;	
+}
+#top-decorator {
+	background: url('../images/bkg-header.png') center top no-repeat;
+	height: 562px;
+}
+.page {
+	margin: 0px auto;
+	width: 910px;
+}
+#header {
+	overflow: hidden;
+}
+#header img {
+	float: left;
+	height: 137px;
+	width: 201px;
+}
+#header .options {
+	float: right;
+	margin-bottom: 15px;
+	padding-top: 35px;
+	width: 708px;
+}
+#navigation {
+	background: url('../images/bkg-navigation.png') left top no-repeat;
+	height: 53px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding-left: 23px;
+	width: 655px;
+}
+#navigation li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	line-height: 48px;
+	padding: 0px 16px;
+}
+#navigation li a {
+	color: #fff;
+	font-size: 19px;
+	font-style: italic;
+	font-weight: normal;
+}
+#navigation li a:hover { color: #ffde0f; }
+#navigation li a.active { color: #ffde0f; }
+
+#banner {
+	clear: both;
+	font-style: italic;
+	overflow: hidden;
+}
+#banner .intro {
+	color: #312c2a;
+	float: left;
+	padding-top: 35px;
+	padding-left: 3px;
+	width: 297px;
+}
+#banner h1 {
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+#banner p {
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+}
+#banner .presentation {
+	background: url('../images/bkg-baloon.png') left top no-repeat;
+	float: right;
+	height: 285px;
+	position: relative;
+	padding: 60px 0px 0px 200px;
+	width: 405px;
+}
+.presentation ul {
+	color: #464646;
+/*
+	list-style-type: none;
+	margin: 65px 0px 0px 200px;
+	width: 315px;
+*/
+}
+#banner ul p { line-height: 12px; }
+.presentation ul li { margin-bottom: 15px; }
+.presentation ul a { color: #f0781f; }
+#follow-link {
+	bottom: 0px;
+	height: 70px;
+	position: absolute;
+	right: 43px;
+	width: 60px;
+}
+
+/* HEADER STYLES END */
+
+
+/* CONTENT STYLES */
+
+#body_clouds {
+	background: url('../images/bkg-body-clouds.png') left bottom repeat-x;
+	padding-top: 15px;
+	padding-bottom: 80px;
+	min-width: 910px;
+}
+.main { 
+	clear: both;
+	overflow: hidden;
+}
+.main .row {
+	margin-bottom: 35px;
+	overflow: hidden;
+}
+.main .column {
+	float: left;
+	margin-right: 25px;
+	width: 286px;
+}
+.main .column-no-margin {
+	float: left;
+	width: 286px;
+}
+.column .header,
+.column-no-margin .header {
+	color: #fff;
+	font-style: italic;
+	padding-top: 10px;
+}
+.column .header h1,
+.column-no-margin .header h1 {
+	font-size: 32px;
+	font-weight: normal;
+}
+.column .header p,
+.column-no-margin .header p {
+	font-size: 14px;
+}
+.main .services .header {
+	background: url('../images/bkg-our-services.png') left top no-repeat;
+	height: 70px;
+	padding-left: 80px;	
+} 
+
+.main .services .header .holder:hover a,
+.main .resume .header .holder:hover a,
+.main .contact .header .holder:hover a { color: #b5e6e7; }
+
+
+.main .services .content,
+.main .resume .content {
+	background: url('../images/bkg-dotted.png') 3px top no-repeat;
+	padding: 17px 20px 0px 0px;
+}
+.main .resume .header {
+	background: url('../images/bkg-our-resume.png') 5px 10px no-repeat;
+	padding-left: 70px;
+	height: 70px;
+}
+.main .contact .header {
+	background: url('../images/bkg-contact.png') left 15px no-repeat;
+	height: 70px;
+	padding-left: 95px;
+}
+.main .contact .content {
+	background: url('../images/bkg-dotted-medium.png') 3px top no-repeat;
+	padding-top: 17px;
+}
+.main .contact .content span {
+	color: #ffd200;
+	font-weight: bold;
+}
+.main .dotted-header { margin-bottom: 0px; }
+.main .dotted-header .header {
+	background: url('../images/bkg-dotted-large.png') left 43px no-repeat;
+	height: 45px;
+	padding: 0px;
+}
+.main .dotted-header .column-no-margin .header {
+	background: url('../images/bkg-dotted-medium.png') left 43px no-repeat;
+}
+.main .dotted-header .content {
+	padding-top: 20px;
+}
+.main .column .content img { margin-bottom: 14px; }
+.main .dotted-header p {
+	font-size: 12px;
+	font-style: italic;
+	line-height: 18px;
+	margin-bottom: 25px;
+}
+.view-all {
+	color: #ffd200;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+}
+.view-all:hover { text-decoration: underline; }
+.written-by {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+}
+.row .column-no-margin .top-decorator {
+	background: url('../images/bkg-news.png') left top no-repeat;
+	padding-top: 8px;
+	width: 264px;
+}
+.row .column-no-margin .bottom-decorator {
+	background: url('../images/bkg-news.png') -548px bottom no-repeat;
+	padding-bottom: 7px;
+	width: 264px;
+}
+.row .column-no-margin ul {
+	background: url('../images/bkg-news.png') -274px top repeat-y;
+	list-style-position: inside;
+	padding: 13px 20px;
+	overflow: hidden; 
+}
+.row .column-no-margin .type-1 {
+	font-weight: bold;
+}
+.row .column-no-margin .type-2 {
+	color: #acd2e5;
+	list-style: none;
+	list-style-position: outside;
+	margin-bottom: 15px;
+}
+.row .column-no-margin .no-margin { margin: 0px; }
+
+.page-content {
+	float: left;
+	margin-right: 25px;
+	width: 600px;
+}
+.page-content .text p { line-height: 16px; margin-bottom: 10px; }
+.page-content .text p.by {
+	font-size: 12px;
+	font-style: italic; 
+	font-weight: bold;
+	margin-bottom: 25px; 
+}
+.page-content .text .no-margin-bottom { margin-bottom: 0px; }
+.page-content .text p span,
+.page-content .text .no-margin-bottom span {
+	background: url('../images/bkg-list-span.png') left 2px no-repeat;
+	display: block;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.page-content h1,
+.sidebar h1,
+.helpdesk h1 {
+	background: url('../images/bkg-dotted-one.png') left bottom repeat-x;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.for-contact h1 {
+	background: url('../images/bkg-contact-little.png') left top no-repeat;
+	padding-left: 65px;
+	padding-bottom: 13px;
+	margin-bottom: 0px;
+}
+.sidebar {
+	float: left;
+	width: 265px;
+}
+.sidebar .top-decorator {
+	background: url('../images/bkg-sidebar.png') left top no-repeat;
+	padding-top: 8px;
+}
+.sidebar .bottom-decorator {
+	background: url('../images/bkg-sidebar.png') -548px bottom no-repeat;
+	padding-bottom: 8px;
+}
+.sidebar .list {
+	background: url('../images/bkg-sidebar.png') -274px top repeat-y;
+	list-style-position: inside;
+	padding: 17px 23px;
+}
+.sidebar .list li {
+	font-size: 12px;
+	line-height: 26px;
+}
+.sidebar .list li a { color: #fff; }
+.sidebar .list li a:hover { color: #FFDE0F; }
+
+.helpdesk h1 { margin-bottom: 10px; }
+.helpdesk h4 { color: #e8e8e8; }
+.helpdesk h2 { color: #ffd200; }
+
+.download {
+	background: url('../images/bkg-download.png') left top no-repeat;
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	font-style: italic;
+	padding-left: 40px;
+	width: 205px;
+}
+
+.items {
+	overflow: hidden;
+}
+.items h5 {
+	background: url('../images/bkg-dotted-one.png') left bottom repeat-x;
+	color: #ffde0f;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 12px;
+	padding-bottom: 8px;
+	width: 180px;
+}
+.items h5 a { color: #ffde0f; }
+.items .box {
+	display: block;
+	float: left;
+	margin-right: 32px;
+	margin-top: 24px;
+	width: 180px;
+}
+.items .box-no-margin-right {
+	float: left;
+	margin-top: 24px;
+	margin-right: 10px;
+	width: 190px;
+}
+.items .box:hover,
+.items .box-no-margin-right:hover { cursor: pointer; }
+
+.helpdesk-holder {
+	float: left;
+	width: 265px;
+}
+
+.list-products .product {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.list-products .product-no-margin-bottom { overflow: hidden; }
+.list-products .product img,
+.list-products .product-no-margin-bottom  img {
+	float: left;
+	height: 110px;
+	width: 133px;
+}
+.list-products .product .informations,
+.list-products .product-no-margin-bottom .informations {
+	float: right;
+	width: 450px;
+}
+.list-products .product p,
+.list-products .product-no-margin-bottom p {
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+.list-products .learn-more {
+	color: #fff;
+	font-weight: bold;
+}
+.list-products .learn-more:hover { text-decoration: underline; }
+
+.contact-dates {
+	background: url('../images/bkg-dotted-one.png') left top repeat-x;
+	margin-bottom: 20px; 
+	padding-top: 12px;  
+}
+.contact-explanation { margin: 0px 0px 19px 3px; line-height: 16px;}
+
+/* CONTENT STYLES END */
+
+/* FOOTER STYLES */
+
+#footer {
+	background: #064157;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	min-width: 910px;
+}
+#footer .row { margin-bottom: 0px; }
+#footer .header {
+	background: url('../images/bkg-dotted-large.png') left bottom no-repeat;
+	height: 40px;
+}
+#footer ul.networks {
+	background: none;
+	margin-bottom: 17px;
+	overflow: hidden;
+	padding: 0px;
+	list-style: none;
+}
+#footer .networks li {
+	display: block;
+	float: left;
+	margin-right: 9px;
+}
+#footer .networks li.no-margin {
+	margin-right: 0px;
+}
+#footer .social {
+}
+#footer .social-no-margin {
+}
+#footer .social img,
+#footer .social-no-margin img {
+	width: 60px;
+	height: 61px;
+}
+
+.highlights {
+	color: #cbcbcb;
+	font-size: 12px;
+	list-style-position: inside;
+	padding-top: 15px;
+}
+.highlights li {
+	margin-bottom: 10px;
+}
+
+.highlights li a:hover { color: #FFDE0F; }
+.copyright {
+	background: #101619;
+	color: #425f6b;
+	line-height: 34px;
+	height: 34px;
+	text-align: center;
+	min-width: 910px;
+}
+.copyright a { color: #425f6b; }
+.copyright a:hover { text-decoration: underline; }
+
+/* FOOTER STYLES END */
+
+/* forms */
+
+#search-form {
+	background: url('../images/bkg-search.png') right top no-repeat;
+	height: 28px;
+	margin-bottom: 15px;
+	padding-right: 15px;
+	position: relative;
+	text-align: right;
+	width: 675px;
+}
+input {
+	color: #919191;
+	font-family: Georgia;
+	font-size: 14px;
+	font-style: italic;
+}
+textarea {
+	color: #e8e8e8;
+	font-family: Georgia;
+	font-size: 14px;
+	font-style: italic;
+}
+#search-form input {
+	background: transparent;
+	height: 18px;
+	margin-top: 3px;
+	padding: 2px;
+	width: 100px;
+} 
+#search-label {
+	color: #919191;
+	display: block;
+	font-size: 14px;
+	font-style: italic;
+	right: 23px;
+	position: absolute;
+	top: 5px;
+	width: 95px;
+}
+
+#subscribe-form {
+	background: url('../images/bkg-subscribe.png') left 13px no-repeat;
+	margin-left: 1px;
+	padding: 23px 0px 23px 18px;
+	position: relative;
+}
+#subscribe-input {
+	background: transparent;
+	width: 225px;
+}
+#subscribe-label {
+	color: #919191;
+	font-size: 14px;
+	font-style: italic;
+	left: 15px;
+	position: absolute;
+	top: 22px;
+}
+#subscribe-submit {
+	background: url('../images/bkg-subscribe-submit.png') left top no-repeat;
+	display: block;
+	height: 19px;
+	margin: 0px 23px 0px auto;
+	width: 30px;
+}
+#subscribe-submit:hover, .arrow:hover { cursor: pointer; }
+
+#contact-form {
+	background: url('../images/bkg-contact-form.png') left top repeat;
+	height: 277px;
+	width: 591px;
+}
+#contact-form .formfield {
+	height: 28px; 
+	padding: 8px 12px 0px;
+	position: relative;
+	margin-bottom: 4px;
+	overflow: hidden;
+}
+#contact-form .formfield-textarea {
+	padding: 8px 12px 0px;
+	position: relative;
+	margin-bottom: 4px;
+	overflow: hidden;
+}
+#contact-form input {
+	background: transparent; 
+	color: #e8e8e8;
+	margin-right: 15px; 
+	width: 228px; 
+}
+#contact-form label { color: #e8e8e8; }
+#contact-form .absolute {
+	position: absolute;
+	font-family: Georgia;
+	font-size: 14px;
+	font-style: italic;
+	left: 12px;
+	top: 8px;
+}
+#contact-form textarea {
+	background: transparent;
+	height: 140px;
+	max-height: 140px;
+	width: 565px;
+	max-width: 565px;
+	overflow-y: auto;
+}
+#contact-submit {
+	background: url('../images/bkg-contact-submit.png') left top no-repeat;
+	color: #e8e8e8;
+	display: block;
+	font-size: 18px;
+	font-style: italic;
+	height: 37px;
+	line-height: 37px;
+	margin-top: 3px;
+	text-align: center;
+	width: 95px;
+}
+#contact-submit:hover { cursor: pointer; }
+
+/* end forms */
+
+
+
+/* general classes */
+.margin-bottom-20 { margin-bottom: 20px; }
+.margin-bottom-40 { margin-bottom: 40px; }
+.active { color: #ffde0f; }
+.yellow-bold { 
+	color: #ffd200;
+	font-weight: bold; 
+}
