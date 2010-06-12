@@ -1,6 +1,0 @@
-AuthUserFile /home/semenko/syndetics.net/.htpasswd
-AuthName syndetics
-AuthType Basic
-
-
-require user syndetics
