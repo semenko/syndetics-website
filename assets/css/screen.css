@@ -1,0 +1,460 @@
+@charset "UTF-8"; /* http://www.w3.org/International/questions/qa-css-charset */
+
+/*	-------------------------------------------------------------
+ 
+	DESIGN AGENCY TEMPLATE - BY SIMON BOUCHARD
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	Description:Base cascading style sheet
+	Nom:screen.css
+	Version:1.0
+	Date:
+ 
+	This file is part of a site template for sale at ThemeForest.net.
+	See: http://themeforest.net/user/simonbouchard/portfolio
+	Copyright ©2009 Simon Bouchard <info@simonbouchard.com>
+ 
+-------------------------------------------------------------	*/
+
+/*	-------------------------------------------------------------
+	IMPORT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+/*
+@import url("");
+*/
+
+/*	-------------------------------------------------------------
+	STYLES FOR SCREEN / PROJECTION
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+@media screen, projection {
+
+/*	-------------------------------------------------------------
+	RESET
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent; }
+	
+body {
+	line-height: 1; }
+		
+ul,
+ol {
+	list-style-type:none;
+	margin:13px 0 13px 15px;
+	padding:0; }
+
+ul li,
+ol li {
+	line-height:1.6;
+	margin:0 0 2px 0;
+	padding:0; }
+	
+blockquote, q {
+	quotes: none; }
+	
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: ''; }
+
+:focus {
+	outline: 0; }
+
+ins {
+	text-decoration: none; }
+	
+del {
+	text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+/*	-------------------------------------------------------------
+	BODY
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+html {
+	font-size: 100%;
+	width: 100%; }
+
+body {
+	font: 80%/1.5em "Myriad Pro", "Trebuchet MS",Verdana,Helvetica,Arial,sans-serif; 
+	letter-spacing:-0.02em;
+	color: #898989;
+	line-height: 1.538em;
+	border-top:4px solid #939292;
+	background: #fff;
+	width: 100%; } 
+
+ 
+/*	-------------------------------------------------------------
+	LINKS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+a {
+	color:#000;
+	margin: 0;
+	outline: 0; }
+ 
+a, a:visited, a:active {
+	text-decoration: none; }
+ 
+a:hover {
+	color:#000;
+	border-bottom:1px solid #939292; }
+
+a.btn {
+	color:#fff;
+	display: block;
+	font-size:16px;
+	font-weight:bold;
+	margin: 10px 0 0 0;
+	width: 39%;
+	padding:15px;
+	float:left;
+	outline: 0;
+	text-align: center; }
+  
+/*	-------------------------------------------------------------
+	TYPOGRAPHY
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+p {
+	line-height: 1.7;
+	margin: 0 0 12px 0; }
+ 
+h1 {
+	font-weight: normal;
+	margin: 15px 0 10px; }
+ 
+h2 {
+	font-size:36px;
+	font-weight: bold;
+	font-style: italic;
+	margin:0 0 15px 0;
+	padding:0;
+	color:#939292; }
+
+h2 span {
+	font-size:14px;
+	font-weight: normal;
+	font-style: italic;
+	padding:0;
+	color:#000; }
+ 
+h3 {
+	color:#939292;
+	font-size:20px;
+	line-height: 1.5em;
+	font-weight:normal;
+	font-style: italic;
+	text-align: justify;
+	margin: 20px 0 20px 0;}
+
+h4 {
+	color:#000;
+	font-size:16px;
+	line-height: 1.6em;
+	font-weight:bold;
+	margin: 5px 0 5px 0;}
+
+/*	-------------------------------------------------------------
+	HACKS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+.clear {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	position: relative; }
+ 
+.clearandspace {
+	clear: both;
+	font-size: 0;
+	height: 20px;
+	line-height: 0;
+	position: relative; }
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden; }
+
+.clearfix { display:inline-block; }
+	
+/* Hide from IE Mac \*/
+	.clearfix { display:block; }
+/* End hide from IE Mac */
+
+/*	-------------------------------------------------------------
+	GLOBAL
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+.left { float:left; width: 48%; }
+.right { float:right; width: 48%; }
+.leftsmall { float:left; width: 35%; }
+.rightlarge { float:right; width: 55%;
+	background:#f2f2f2;
+	padding:20px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;  }
+ 
+/*	-------------------------------------------------------------
+	GRID
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+.container {
+	padding:0;
+	margin:0 auto;
+	width: 100%;
+	text-align: center }
+ 
+.wrapper {
+	margin:0 auto;
+	padding: 0;
+	width:940px; }
+ 
+.header {
+	position: relative;
+	margin: 0 auto 40px auto;
+	padding:60px 0 0 0;
+	width: 940px;
+	height: 80px;
+	border-bottom: 2px solid #f2f2f2; }
+
+.welcome {
+	width: 900px;
+	margin: 0 auto 60px auto; }
+
+.welcome p {
+	color:#939292;
+	font-size: 1.7em;
+	line-height: 150%;
+	font-style: italic;
+	text-align: center; }
+
+.content {
+	padding:0;
+	margin:0 auto;
+	width: 900px;
+	text-align:left; }
+
+.content p {
+	font-size:14px; }
+
+.content ul li,
+.content ol li {
+	font-size:14px;
+	padding:0 0 0 14px;
+	background: transparent url("../../images/bg_arrow_li.gif") no-repeat 0 5px; }
+
+/*	-------------------------------------------------------------
+	INTERFACE ELEMENTS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+/* HEADER */
+.header h1 {
+	color:#000;
+	font-size:2.5em;
+	font-weight: bold;	
+	margin:0;
+	padding:0;
+	float:left; }
+
+.header .nav {
+	position: relative;
+	margin:0;
+	float:right;
+	padding:7px 0 0 0;
+	margin:0 0 40px 0; }
+
+.header .nav li {
+	float:left;
+	width:auto;
+	margin:0 15px;
+	background:transparent; }
+
+.header .nav li a {
+	color:#939292;
+	font-weight: normal;
+	font-size:1em;
+	padding:0 0 10px 0;
+	background:transparent; }
+
+.header .nav li a:hover {
+	color:#000;
+	border:none;
+	background: url(../../images/bg_nav_li.gif) no-repeat 50% 100%; }
+
+.header .nav li a.selected {
+	color:#000;
+	border:none; }
+
+/*	-------------------------------------------------------------
+	SHOWCASE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+#showcase {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 940px;
+	margin: 0 auto; }
+
+#showcase #prev a, #showcase #next a {
+	display: block;
+	height: 36px;
+	width: 36px;
+	float: left;
+	margin-top: 120px; }
+
+#showcase #prev a {
+	background: url(../../images/back.gif) no-repeat 0 -36px; }
+
+#showcase #prev a:hover, #showcase #prev a:hover {
+	background-position: 0 0;
+	border:none; }
+
+#showcase #next a {
+	background: url(../../images/next.gif) no-repeat 0 0; }
+
+#showcase #next a:hover, #showcase #next a:hover {
+	background-position: 0 -36px;
+	border:none; }
+
+#showcase ul#slides {
+	float: left;
+	margin: 0 20px;
+	width: 788px; }
+
+#showcase ul#slides li {
+	background: none; }
+
+#showcase img {
+	height:294px;
+	width:788px; }
+
+#showcase span.slide_caption {
+	display:none; }
+
+.caption {
+	display: block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px; }
+
+.caption #project_caption {
+	display:none;  
+	color:#939292; 
+	text-align: center;
+	background:transparent; }
+
+/*	-------------------------------------------------------------
+	PORTFOLIO
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+.portfoliorow {
+	margin:0;
+	width:760px; 
+	height:250px; 
+	clear:both; }
+
+.portfoliorow h2 {
+	margin:0;
+	padding:0;
+	font-weight: normal;
+	font-size:18px;
+	color:#000  }
+
+.portfoliorow h3 {
+	margin:0;
+	padding:0;
+	font-style: normal;
+	font-size:14px;
+	color:#939292}
+
+.portfoliorow a:hover {
+	border:none; }
+	
+.portfoliobox1 {
+	width:238px; 
+	height:250px; 
+	float:left; }
+	
+.portfoliobox {
+	margin-left:22px; 
+	width:238px; 
+	height:250px; 
+	float:left; }
+
+#portfolioitem { 
+	width:220px; 
+	height:160px; 
+	float:left;}
+
+.portfolioleft {
+	width:160px; 
+	float:left; 
+	clear:left;
+	margin:20px 0 0 0; }
+
+.portfolioleft h3 {
+	font-size:24px;
+	padding:0;
+	margin:0;
+	font-weight: bold;
+	font-style: italic; }
+
+.portfolioright {
+	width:740px; 
+	float:right;
+	margin:20px 0 0 0; }
+
+/*	-------------------------------------------------------------
+	FOOTER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+.footer {
+	width: 900px;
+	height: 50px;
+	padding:0 20px;
+	margin:40px auto;
+	text-align: left;
+	border-top: 2px solid #f2f2f2;  }
+
+.footer .right { text-align: right; }
+
+.footer p {
+	font-size:12px;
+	line-height:50px  }
+
+	
+/*	-------------------------------------------------------------
+	CLOSING STYLES FOR SCREEN / PROJECTION
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+}
