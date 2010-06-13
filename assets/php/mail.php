@@ -3,7 +3,7 @@
 // CONFIGURATION --------------------------------------------------------------
 
 // This is the email where the contact mails will be sent to.
-$config['recipient'] = 'you@example.com';
+$config['recipient'] = 'info@syndetics.net';
 
 // This is the subject line for contact emails.
 // The variable %name% will be replaced with the name of the sender.
@@ -23,7 +23,7 @@ $config['errors'] = array
 
 // Ignore non-POST requests
 if ( ! $_POST)
-	exit('Nothing to see here. Please go back to the site.');
+	exit('Error type 2.');
 
 // Was this an AJAX request or not?
 $ajax = (isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
