@@ -4,7 +4,7 @@
 				<p>Copyright &copy; <?=date('Y') ?> <a href="#" title="Syndetics, LLC">Syndetics, LLC</a>. All rights reserved.</p>
 			</div>
 			<div class="right">
-				<p> <a href="" title="right content">right content</a></p>
+				<p> </p>
 			</div>
 		</div>
 		<!-- // footer -->
