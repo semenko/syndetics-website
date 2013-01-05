@@ -1,7 +1,0 @@
-AddHandler php5-cgi .html .htm
-
-<Files openid>
-ForceType application/xrds+xml
-</Files>
-
-#Alias /simplesaml /home/semenko/syndetics.net/www/

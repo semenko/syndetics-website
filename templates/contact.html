@@ -23,24 +23,26 @@ require('lib/head.php');
 				
 				<h4>Online contact form</h4>
 				<p>Fill this form if you'd like to get in touch.</p>
-					<form id="contactform" action="assets/php/mail.php" method="post" enctype="multipart/form-data" class="global" >
+                <!-- // onload="if(submitted) {window.location='https://epoxate.com/godot.html';}" -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+					<form id="contactform" action="https://spreadsheets.google.com/a/syndetics.net/formResponse?formkey=dDBMaDRKX3lJanhpM1VGTlFGeFlhSXc6MQ" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 						<ul>						
 							<li>
 
 								<label for="name">Your Name</label>
-								<input id="name" name="name" type="text" />
+								<input id="name" name="entry.0.single" type="text" autocomplete="name">
 							</li>
 							<li>
 								<label for="email">Your Email</label>
-								<input id="email" name="email" type="text" />
+								<input id="email" name="entry.1.single" type="text" autocomplete="email">
 							</li>
 							<li>
 
 								<label for="message">Message</label>
-								<textarea id="message" name="message" rows="3" cols="40"></textarea>
+								<textarea id="message" name="entry.2.single" rows="3" cols="40"></textarea>
 							</li>
 							<li>							
-							 	<input type="submit" class="submit" value="Send Now" />
+							 	<input type="submit" class="submit" value="Send Now">
 							</li>
 						</ul>
 					</form>
