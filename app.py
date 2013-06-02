@@ -46,46 +46,17 @@ def page_index():
 
 
 # About Us
-@app.route("/about-us.html")
+@app.route("/about.html")
 def page_about():
-    return render_template('about-us.html')
+    return render_template('about.html')
 
-@app.route("/featured-trips.html")
+@app.route("/services.html")
 def page_featured_trips():
-    return render_template('featured-trips.html')
+    return render_template('services.html')
 
-@app.route("/cruises.html")
+@app.route("/contact.html")
 def page_cruises():
-    return render_template('cruises.html')
-
-@app.route("/tours.html")
-def page_tours():
-    return render_template('tours.html')
-
-@app.route("/vacation-packages.html")
-def page_vacation_packages():
-    return render_template('vacation-packages.html')
-
-@app.route("/hotels-and-resorts.html")
-def page_hotels_and_resorts():
-    return render_template('hotels-and-resorts.html')
-
-@app.route("/promotions.html")
-def page_promotions():
-    return render_template('promotions.html')
-
-@app.route("/luxury-villas.html")
-def page_luxury_villas():
-    return render_template('luxury-villas.html')
-
-@app.route("/travel-resources.html")
-def page_travel_resources():
-    return render_template('travel-resources.html')
-
-@app.route("/contact-us.html")
-def page_contact_us():
-    return render_template('contact-us.html')
-
+    return render_template('contact.html')
 
 
 ######
@@ -123,4 +94,4 @@ else:
 
     app.config['prod'] = True
     # We don't really support SSL given Cloudfront, but ...
-    app.config['STATIC_ROOT'] = '//@@@@@@@@@@@@@@@@@@@@@@@@@@@@.cloudfront.net/s/'
+    app.config['STATIC_ROOT'] = '//.cloudfront.net/s/'
