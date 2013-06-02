@@ -1,7 +1,4 @@
-<?
-$custom_css = 'assets/css/form.css';
-require('lib/head.php');
-?>
+{% include 'lib/header.html' %}
 
 		<!-- content -->
 		<div class="content clearfix">
@@ -25,7 +22,7 @@ require('lib/head.php');
 				<p>Fill this form if you'd like to get in touch.</p>
                 <!-- // onload="if(submitted) {window.location='https://epoxate.com/godot.html';}" -->
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-					<form id="contactform" action="https://spreadsheets.google.com/a/syndetics.net/formResponse?formkey=dDBMaDRKX3lJanhpM1VGTlFGeFlhSXc6MQ" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+					<form id="contactform" action="https://spreadsheets.google.com/a/syndetics.net/formResponse?formkey=dDBMaDRKX3lJanhpM1VGTlFGeFlhSXc6MQ" method="post" target="hidden_iframe" onsubmit="submitted=true;" class="global">
 						<ul>						
 							<li>
 
@@ -46,6 +43,7 @@ require('lib/head.php');
 							</li>
 						</ul>
 					</form>
+
 			
 			</div>
 			

@@ -270,7 +270,7 @@ h4 {
 .content ol li {
 	font-size:14px;
 	padding:0 0 0 14px;
-	background: transparent url("../../images/bg_arrow_li.gif") no-repeat 0 5px; }
+	background: transparent url("../../s/bg_arrow_li.gif") no-repeat 0 5px; }
 
 /*	-------------------------------------------------------------
 	INTERFACE ELEMENTS
@@ -308,7 +308,7 @@ h4 {
 .header .nav li a:hover {
 	color:#000;
 	border:none;
-	background: url(../../images/bg_nav_li.gif) no-repeat 50% 100%; }
+	background: url(../../s/bg_nav_li.gif) no-repeat 50% 100%; }
 
 .header .nav li a.selected {
 	color:#000;
@@ -333,14 +333,14 @@ h4 {
 	margin-top: 120px; }
 
 #showcase #prev a {
-	background: url(../../images/back.gif) no-repeat 0 -36px; }
+	background: url(../../s/back.gif) no-repeat 0 -36px; }
 
 #showcase #prev a:hover, #showcase #prev a:hover {
 	background-position: 0 0;
 	border:none; }
 
 #showcase #next a {
-	background: url(../../images/next.gif) no-repeat 0 0; }
+	background: url(../../s/next.gif) no-repeat 0 0; }
 
 #showcase #next a:hover, #showcase #next a:hover {
 	background-position: 0 -36px;
